@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+    check_yosys_base:
+        build:
+            context: .
+        image: dev_check_yosys_basic

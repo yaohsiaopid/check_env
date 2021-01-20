@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+    server:
+        image: "dev_check_yosys_basic"
+        hostname: "check_yosys_dev_server"
+        ports:
+            - "6473:22"
+        volumes:
+            - $HOME:/root
+        privileged: true
